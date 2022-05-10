@@ -1,4 +1,17 @@
-import Head from 'next/head'
+
+import Head from 'next/head';
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  PinterestShareButton,
+  PinterestIcon,
+  RedditShareButton,
+  RedditIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+} from 'next-share';
 
 export default function Home() {
   return (
@@ -6,6 +19,7 @@ export default function Home() {
       <Head>
         <title>KG Portfolio</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></link>
       </Head>
 
       <main>
@@ -15,14 +29,66 @@ export default function Home() {
      
 
         <p className="description">
-        I am a Fullstack Developer
+        My name is Kellie and I am a Fullstack Developer
         </p>
 
        
       </main>
 
+      <body>
+      
+        <div>
+        <h1>
+          Skills
+        </h1>
+        <div className='skills'>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+          
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" />
+         
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+          
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+          
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+           
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+          
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+        </div>
+        </div>
+        
+
+      </body>
+
       <footer>
-        Links to social media/contact go here
+        <h3>Contact Me:</h3>
+        <div>
+         <ul>
+          <li>EMAIL</li>
+          <li>GITHUB</li>
+           </ul>
+
+        </div>
+        <div className='social-icons'>
+                      
+        <FacebookShareButton
+        
+        url={'http://localhost:3000'} >
+        <FacebookIcon size={32} round />
+      </FacebookShareButton>
+      
+      <LinkedinShareButton
+        
+        url={'http://localhost:3000'} >
+        <LinkedinIcon size={32} round />
+      </LinkedinShareButton>
+                        
+                    </div>
       </footer>
 
       <style jsx>{`
@@ -42,6 +108,14 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+
+        .skills {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+
         }
 
         footer {

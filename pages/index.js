@@ -36,7 +36,20 @@ export default function Home() {
       </main>
 
       <body>
-      
+      <div>
+        <h1>
+          About Me
+        </h1>
+        <p>
+        I am a Developer. I am a Reader. I am a Dreamer. 
+        </p>
+      </div>
+      <div>
+        <h1>
+          Projects
+        </h1>
+        Link to Youtube Demo here
+      </div>
         <div>
         <h1>
           Skills

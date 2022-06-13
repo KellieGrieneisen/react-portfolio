@@ -48,7 +48,7 @@ export default function Home() {
         <h1>
           Projects
         </h1>
-        Link to Youtube Demo here
+        <link src="https://www.youtube.com/watch?v=V-3MQ4Hvt7M"/>
       </div>
         <div>
         <h1>
